@@ -1,6 +1,7 @@
-const knex = require('../../configs/index.js');
+const knex = require("../../configs/index.js");
 
-module.exports = { userinfo:(id)=>{
-    return (knex('userstats').select().where('userid',id))
-}
-}
+module.exports = {
+  userinfo: (id) => {
+    return knex("userstats").select().where("userid", id);
+  },
+};
